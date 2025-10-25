@@ -1,4 +1,4 @@
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 
 
-console.log(fruits.indexOf("Apple"));
+console.log(fruits.lastIndexOf("Apple"));
