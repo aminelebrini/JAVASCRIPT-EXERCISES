@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+<body class="flex flex-col justify-around items-center">
+    <div class="btns w-[50%] p-2 flex flex-row justify-around items-center">
+        <button type="button" id="user" class="w-[200px] bg-[#676363] text-white p-2 rounded-[10px]" onclick="sortByUserName()">utilsateur</button>
+        <button type="button" class="w-[200px] bg-[#676363] text-white p-2 rounded-[10px]" onclick="sortByPostTitle()">le titre</button>
+    </div>
+    <div class="offset flex flex-row items-center justify-between w-[40%] mt-[3%]">
+        <input type="text" placeholder="Entrer le debut de l'affichage" id="ndebut" class="border2 w-[250px]">
+        <input type="text" placeholder="entrer le nombre a afficher" id="naffi" class="border2 w-[250px]">
+        <button type="button" onclick=" Ndebut = parseInt(document.getElementById('ndebut').value); Naffi = parseInt(document.getElementById('naffi').value); getPagePosts(Ndebut, Naffi)">click</button>
+    </div>
+    <div id="display" class="p-5 w-full mx-auto flex flex-wrap justify-center gap-5"></div>
+    <script src="index.js"></script>
+</body>
+</html>
