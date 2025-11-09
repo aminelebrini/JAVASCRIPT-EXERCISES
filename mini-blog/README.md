@@ -1,3 +1,4 @@
+````
 Ecrire ici le code permettant
         1 - de récupérer tous les Posts, Users et Comments
         2 - de convertir les trois réponses en tableaux :
@@ -24,3 +25,4 @@ Ecrire ici le code permettant
         6 - Ecrire la fonction showComments(postId) qui permet d'afficher les commentaires
         de le Post ayant l'id postId
         7 - (facultatif) Ajouter une pagination
+````
