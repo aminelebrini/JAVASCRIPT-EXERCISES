@@ -1,28 +1,54 @@
-````
-Ecrire ici le code permettant
-        1 - de récupérer tous les Posts, Users et Comments
-        2 - de convertir les trois réponses en tableaux :
-            * users
-            * posts
-            * comments
-        3 - de créer un nouveau tableau nommé allPosts sous la forme :
-            [
-                {
-                    id : 1,
-                    userName : 'toto',
-                    title : 'un article',
-                    body : 'le corps de l\'article',
-                    published : true,
-                    comments : [{...}, ...]
-                },
-                ...
-            ]
-        4 - Créer les fonctions utilitaires suivantes :
-                4-1 sortByUserName() qui permet de trier par utilsateur
-                4-2 sortByPostTitle() qui permet de trier par le titre du Post
-                4-3 getPagePosts(offset, size = 10) qui retourne un nouveau tableau extrait du tableau allPosts à partir de offset et contenant size éléments
-        5 - Ecrire la fonction showPosts() qui permettra d'afficher les 10 premiers posts
-        6 - Ecrire la fonction showComments(postId) qui permet d'afficher les commentaires
-        de le Post ayant l'id postId
-        7 - (facultatif) Ajouter une pagination
-````
+# Gestion des Posts, Users et Comments
+
+Ce projet permet de récupérer des données depuis une API et de les manipuler pour créer un tableau combiné `allPosts` avec des fonctionnalités utiles comme le tri, l'affichage et la pagination.
+
+---
+
+## Objectifs
+
+1. Récupérer tous les **Posts**, **Users** et **Comments** depuis l'API.
+2. Convertir les trois réponses en tableaux séparés :
+   - `users`
+   - `posts`
+   - `comments`
+3. Créer un nouveau tableau `allPosts` sous la forme suivante :
+
+```json
+[
+  {
+    "id": 1,
+    "userName": "toto",
+    "title": "un article",
+    "body": "le corps de l'article",
+    "published": true,
+    "comments": [
+      {
+        // commentaires liés
+      }
+    ]
+  }
+]
+```
+4- Créer les fonctions utilitaires suivantes :
+
+   4.1- sortByUserName() : trie allPosts par nom d'utilisateur.
+
+   4.2- sortByPostTitle() : trie allPosts par titre de post.
+
+   4.3- getPagePosts(offset, size = 10) : retourne un nouveau tableau extrait de allPosts à partir de offset et contenant size éléments.
+
+5- Écrire la fonction showPosts() qui permet d'afficher les 10 premiers posts.
+
+6- Écrire la fonction showComments(postId) qui permet d'afficher les commentaires du post ayant l'id postId.
+
+7- (Facultatif) Ajouter une pagination pour naviguer entre les posts.
+
+```
+/project-root
+│
+├─ index.html
+├─ style.css
+├─ script.js   # contient toutes les fonctions
+└─ README.md
+```
+
